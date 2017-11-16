@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<meta name="description" content="Blog post for all your blogging needs">
+		<meta name="keywords" content="blog">
+		<meta name="author" content="Reina Villanueva">
+		<title>Bloggit | Home</title>
+		<link rel="stylesheet" href="./css/style.css" type="text/css">
+	</head>
+	
+	<body>
+		<header>
+			<br>
+			<div class="top-header-bar">
+				<a href="login.html">Login</a>
+				<span style="color:#ffffff">&nbsp; &#124; &nbsp;</span>
+				<a href="signup.html" style="font-weight:bold">Sign Up</a>
+			</div>
+			<div class="container-no-flow">
+				<div id="branding">
+					<a href="index.html"><img id="logo" src="./img/full-logo.png" /></a>
+				</div>
+				<nav id="navbar">
+					<form id="search">
+						<input type="text" name="search" placeholder="Search">
+						<input type="submit" class="search-btn" value=""></button>
+					</form>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="news.html">News</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="contactUs.html">Contact Us</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		
+		<button id="backToTop" onclick="topFunction()" title="Go to top"></button>
+		
+		<section id="articles">
+			<div class="container">
+				<div class="main-col">
+					<article>
+						<div class="banner">
+							<p>January 1, 2017</p>
+						</div>
+						<div class="content">
+							<h2>First Post</h2>
+							<p class="post-info">by Jane Doe</p>
+							<img class="article-img" src="./img/articleimg.jpg" />
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pretium, nibh id tempus rutrum, leo leo pellentesque nisl, et eleifend ante est vel neque. Cras eget semper nibh, vel auctor mi. Proin ornare congue augue eu pretium. Duis nec magna id lectus volutpat ultricies. Praesent vulputate ante vitae nibh interdum lacinia...</p>
+							<button class="btn-read-more">Read More</button>
+						</div>
+					</article>
+					<article>
+						<div class="banner">
+							<p>January 1, 2017</p>
+						</div>
+						<div class="content">
+							<h2>Second Post</h2>
+							<p class="post-info">by Jane Doe</p>
+							<img class="article-img" src="./img/articleimg.jpg" />
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pretium, nibh id tempus rutrum, leo leo pellentesque nisl, et eleifend ante est vel neque. Cras eget semper nibh, vel auctor mi. Proin ornare congue augue eu pretium. Duis nec magna id lectus volutpat ultricies. Praesent vulputate ante vitae nibh interdum lacinia...</p>
+							<button class="btn-read-more">Read More</button>
+						</div>
+					</article>
+					<article>
+						<div class="banner">
+							<p>January 1, 2017</p>
+						</div>
+						<div class="content">
+							<h2>Third Post</h2>
+							<p class="post-info">by Jane Doe</p>
+							<img class="article-img" src="./img/articleimg.jpg" />
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pretium, nibh id tempus rutrum, leo leo pellentesque nisl, et eleifend ante est vel neque. Cras eget semper nibh, vel auctor mi. Proin ornare congue augue eu pretium. Duis nec magna id lectus volutpat ultricies. Praesent vulputate ante vitae nibh interdum lacinia...</p>
+							<button class="btn-read-more">Read More</button>
+						</div>
+					</article>
+				</div>
+				<div class="side-col">
+					<aside>
+						<h3>Top Sidebar</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pretium, nibh id tempus rutrum, leo leo pellentesque nisl, et eleifend ante est vel neque.</p>
+					</aside>
+					<aside>
+						<h3>Middle Sidebar</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pretium, nibh id tempus rutrum, leo leo pellentesque nisl, et eleifend ante est vel neque.</p>
+					</aside>
+					<aside>
+						<h3>Bottom Sidebar</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pretium, nibh id tempus rutrum, leo leo pellentesque nisl, et eleifend ante est vel neque.</p>
+					</aside>
+				</div>
+			</div>
+		</section>
+		
+		<footer>
+			<div class="sitemap">
+				<div class="col">
+					<h4>News</h4>
+					<ul>
+						<li><a href="index.html">link1</a></li>
+						<li><a href="index.html">link2</a></li>
+						<li><a href="index.html">link3</a></li>
+					</ul>
+				</div>
+				<div class="col">
+					<h4>About</h4>
+					<ul>
+						<li><a href="index.html">link1</a></li>
+						<li><a href="index.html">link2</a></li>
+						<li><a href="index.html">link3</a></li>
+					</ul>
+				</div>
+				<div class="col">
+					<h4>Contact Us</h4>
+					<ul>
+						<li><a href="index.html">link1</a></li>
+						<li><a href="index.html">link2</a></li>
+						<li><a href="index.html">link3</a></li>
+					</ul>
+				</div>
+			</div>
+			<p class="copyright">Bloggit Copyright &copy; 2017</p>
+		</footer>
+	<script>
+		window.onscroll = function () {scrollFunction()};
+		
+		function scrollFunction() {
+			if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
+				document.getElementById("backToTop").style.display = "block";
+			} else {
+				document.getElementById("backToTop").style.display = "none";
+			}
+		}
+		
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
+	</body>
+</html>
